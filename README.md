@@ -1,4 +1,4 @@
-# ML Intern + OmniRoute research setup
+# ML Intern  research setup
 
 This repository contains the complete source for the ML Intern web app and its local OmniRoute gateway. ML Intern has a React frontend, a FastAPI backend, a MongoDB training queue, a separate model-training worker, and Locust experiments. OmniRoute routes the chatbot's LLM calls and provides a live routing monitor. Model artifacts and dataset CSVs are created in MongoDB/GridFS when you run the project; credentials and local database files are not included.
 
