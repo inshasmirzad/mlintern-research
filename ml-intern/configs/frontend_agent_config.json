@@ -1,0 +1,7 @@
+{
+  "model_name": "openai/auto",
+  "save_sessions": false,
+  "yolo_mode": false,
+  "confirm_cpu_jobs": true,
+  "auto_file_upload": false
+}

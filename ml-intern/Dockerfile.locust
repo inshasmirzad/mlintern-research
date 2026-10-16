@@ -1,0 +1,25 @@
+# ── Locust Load Tester ──
+FROM python:3.12-slim
+
+WORKDIR /app
+
+# Install uv
+RUN pip install --no-cache-dir uv
+
+# Copy the load test files and the project root for uv to resolve
+COPY load_tests/ ./load_tests/
+COPY pyproject.toml uv.lock* ./
+
+# Install dependencies
+RUN uv sync --no-dev
+
+# Copy the .env for load tests
+COPY load_tests/.env ./load_tests/.env
+
+# Expose the Locust web UI port
+EXPOSE 8089
+
+WORKDIR /app/load_tests
+
+# Run Locust with web UI
+CMD ["uv", "run", "locust", "-f", "locustfile.py", "--host=http://frontend:5173", "--web-host=0.0.0.0"]

@@ -1,0 +1,16 @@
+node_modules
+.venv
+__pycache__
+*.pyc
+.git
+.next
+.build
+frontend/node_modules
+frontend/dist
+ml_intern.egg-info
+session_logs
+backend/session_logs
+load_tests/load_test_report_*.md
+load_tests/results_*.csv
+load_tests/report.html
+load_tests/test_report.html

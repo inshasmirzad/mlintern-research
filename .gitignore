@@ -1,0 +1,24 @@
+# Local credentials and runtime state
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.devin-bridge.example
+!**/.env.homolog.example
+ml-intern/.venv/
+ml-intern/frontend/node_modules/
+ml-intern/frontend/dist/
+ml-intern/**/__pycache__/
+ml-intern/.pytest_cache/
+ml-intern/.ruff_cache/
+ml-intern/session_logs/
+ml-intern/users.db
+ml-intern/backend/users.db
+ml-intern/backend/*.pkl
+omniroute/node_modules/
+omniroute/.build/
+omniroute/dist/
+omniroute/data/
+ml-intern/load_tests/*.csv
+ml-intern/load_tests/*.html
+ml-intern/load_tests/*.jsonl
+
